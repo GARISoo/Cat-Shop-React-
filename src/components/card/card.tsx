@@ -2,7 +2,9 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../store';
-import { addItems, itemCounter, setSubTotal } from '../../redux/productsReducer';
+import {
+  addItems, itemCounter, setSubTotal,
+} from '../../redux/productsReducer';
 import styles from './card.module.scss';
 
 export type CardProps = {

@@ -11,13 +11,13 @@ const Header = () => {
     <header className="header">
       <nav className="header__nav">
         <NavLink
+          className="header__nav-link"
+          to="/catalog"
           onClick={() => {
             dispatch(resetCart());
             dispatch(resetItemCounter());
             dispatch(resetSubTotal());
           }}
-          className="header__nav-link"
-          to="/catalog"
         >
           Catalog
         </NavLink>

@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { CardProps } from '../card/card';
@@ -57,7 +58,7 @@ const CartItem = ({
       </div>
       <div className={styles.card__right}>
         <span className={styles.card__cost}>{`Price per unit: ${price}$`}</span>
-        <span className={styles.card__cost}>{`In Total: ${total.toFixed(2)}$`}</span>
+        <span className={styles.card__cost}><b>{`In Total: ${total.toFixed(2)}$`}</b></span>
       </div>
     </div>
   );
